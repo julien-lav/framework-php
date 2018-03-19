@@ -1,0 +1,29 @@
+
+$ composer init
+
+$ composer require --dev  phpunit/phpunit
+
+$ php -S localhost:8000 -d display_errors=1 -t public/
+
+/* On créé dans composer.json l'autoload */
+/* "Framework\\": "src/Framework"        */
+
+$ composer dump-autoload
+
+$ ./vendor/bin/phpunit tests/Framework/ AppTest.php
+/* Pour lancer les testes */
+
+www.php-fig.org/psr/ 
+
+$ composer require guzzlehttp/psr7
+
+$ composer require http-interop/response-sender
+
+$ .vendor/bin/phpcs; .vendor/bin/phpunit
+/* Pour lancer les testes et les le sniffer à la fois */
+
+git add nom_du_ficher 
+git --amend
+
+/* revenir au dernier commit */
+git reset --hard HEAD
